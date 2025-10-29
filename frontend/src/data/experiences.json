@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Beach Paradise",
+    "category": "Beach",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    "price": 15999,
+    "shortDescription": "Relax on pristine beaches with crystal-clear waters and golden sands.",
+    "description": "Escape to a tropical paradise where turquoise waters meet white sandy beaches. This all-inclusive beach getaway includes luxurious beachfront accommodation, water sports activities, sunset cruises, and gourmet dining experiences. Perfect for couples and families seeking relaxation and adventure.",
+    "availableDates": ["2025-11-15", "2025-11-22", "2025-12-01", "2025-12-15"],
+    "slots": ["Morning (9 AM - 12 PM)", "Afternoon (2 PM - 5 PM)", "Full Day (9 AM - 6 PM)"],
+    "duration": "3 Days / 2 Nights",
+    "included": ["Beachfront Resort Stay", "All Meals", "Water Sports", "Sunset Cruise", "Airport Transfer"]
+  },
+  {
+    "id": 2,
+    "title": "Mountain Hike Adventure",
+    "category": "Adventure",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+    "price": 12999,
+    "shortDescription": "Trek through breathtaking mountain trails and witness stunning vistas.",
+    "description": "Challenge yourself with an exhilarating mountain hiking experience through pristine wilderness. This adventure includes guided treks, camping under the stars, mountain climbing basics, and panoramic views from summit points. Suitable for adventure enthusiasts with moderate fitness levels.",
+    "availableDates": ["2025-11-10", "2025-11-20", "2025-12-05", "2025-12-20"],
+    "slots": ["Early Morning (6 AM - 12 PM)", "Full Day Trek (6 AM - 6 PM)"],
+    "duration": "2 Days / 1 Night",
+    "included": ["Professional Guide", "Camping Gear", "Meals & Snacks", "Safety Equipment", "Transport to Base"]
+  },
+  {
+    "id": 3,
+    "title": "Historic City Tour",
+    "category": "City",
+    "image": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade",
+    "price": 8999,
+    "shortDescription": "Explore ancient architecture and vibrant culture in historic cities.",
+    "description": "Immerse yourself in the rich history and culture of ancient cities. This curated tour takes you through UNESCO World Heritage sites, bustling markets, traditional neighborhoods, and iconic landmarks. Experience local cuisine, interact with artisans, and discover hidden gems with expert local guides.",
+    "availableDates": ["2025-11-08", "2025-11-16", "2025-11-25", "2025-12-03"],
+    "slots": ["Morning Tour (8 AM - 1 PM)", "Evening Tour (3 PM - 8 PM)", "Full Day (8 AM - 8 PM)"],
+    "duration": "1 Day",
+    "included": ["Expert Guide", "Museum Entries", "Local Lunch", "AC Transport", "Photography Spots"]
+  },
+  {
+    "id": 4,
+    "title": "Desert Safari Experience",
+    "category": "Desert",
+    "image": "https://images.unsplash.com/photo-1504198458649-3128b932f49b",
+    "price": 18999,
+    "shortDescription": "Ride through golden dunes and camp under starlit desert skies.",
+    "description": "Experience the magic of the desert with thrilling dune bashing, camel rides, and traditional Bedouin camping. Watch mesmerizing sunsets over endless sand dunes, enjoy cultural performances, savor authentic desert cuisine, and sleep under a blanket of stars. An unforgettable adventure in the heart of the desert.",
+    "availableDates": ["2025-11-12", "2025-11-19", "2025-11-28", "2025-12-10"],
+    "slots": ["Afternoon & Evening (3 PM - 10 PM)", "Overnight Camp (3 PM - 9 AM next day)"],
+    "duration": "1 Day / Optional Overnight",
+    "included": ["Dune Bashing", "Camel Ride", "BBQ Dinner", "Cultural Show", "Desert Camping"]
+  },
+  {
+    "id": 5,
+    "title": "Jungle Safari",
+    "category": "Adventure",
+    "image": "https://images.unsplash.com/photo-1564760055775-d63b17a55c44",
+    "price": 14999,
+    "shortDescription": "Discover exotic wildlife in their natural habitat through guided safaris.",
+    "description": "Embark on an exciting wildlife safari through dense jungles and nature reserves. Spot exotic animals, rare birds, and diverse flora with experienced naturalist guides. Includes jeep safaris, nature walks, wildlife photography sessions, and eco-friendly accommodation in the heart of nature.",
+    "availableDates": ["2025-11-14", "2025-11-23", "2025-12-02", "2025-12-12"],
+    "slots": ["Morning Safari (5 AM - 10 AM)", "Evening Safari (4 PM - 7 PM)", "Full Day (5 AM - 7 PM)"],
+    "duration": "2 Days / 1 Night",
+    "included": ["Jeep Safari", "Naturalist Guide", "Jungle Lodge Stay", "All Meals", "Nature Walks"]
+  },
+  {
+    "id": 6,
+    "title": "Island Hopping",
+    "category": "Beach",
+    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19",
+    "price": 22999,
+    "shortDescription": "Explore multiple tropical islands with pristine beaches and lagoons.",
+    "description": "Discover paradise across multiple breathtaking islands. This exclusive package includes speedboat transfers, snorkeling in crystal-clear waters, beach picnics on secluded shores, and luxury resort stays. Experience diverse marine life, explore hidden coves, and create unforgettable memories.",
+    "availableDates": ["2025-11-18", "2025-11-26", "2025-12-07", "2025-12-18"],
+    "slots": ["Full Day Tour (8 AM - 6 PM)"],
+    "duration": "4 Days / 3 Nights",
+    "included": ["Island Transfers", "Snorkeling Gear", "Beach Picnics", "Resort Stay", "All Activities"]
+  }
+]

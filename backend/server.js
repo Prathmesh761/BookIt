@@ -11,10 +11,23 @@ connectDB();
 
 const app = express();
 
+// Configure CORS: allow origin(s) from env var FRONTEND_URL (comma-separated),
+// or fallback to localhost for local dev. Use '*' to allow any origin (use with caution).
+const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
 app.use(cors({
-    origin: "http://localhost:5173", // Frontend URL
-    credentials: true,
-  }));
+  origin: function (origin, callback) {
+    // Allow non-browser requests (e.g. curl, server-to-server) which have no origin
+    if (!origin) return callback(null, true);
+
+    if (FRONTEND_URL === '*') return callback(null, true);
+
+    const allowed = FRONTEND_URL.split(',').map((s) => s.trim());
+    if (allowed.includes(origin)) return callback(null, true);
+
+    return callback(new Error('CORS policy: This origin is not allowed'));
+  },
+  credentials: true,
+}));
 app.use(cookieParser());
 // Debug middleware to log request body
 app.use((req, res, next) => {
@@ -50,7 +63,7 @@ app.use((req, res, next) => {
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`📱 Frontend URL: http://localhost:5173`);
+  console.log(`📱 Frontend URL(s): ${FRONTEND_URL}`);
   console.log(`🔗 API URL: http://localhost:${PORT}`);
 });
 

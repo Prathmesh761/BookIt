@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { User, Mail, Phone, Tag, IndianRupee, Calendar, Clock, Image as ImageIcon } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import Toast from '../components/Toast';
+import { API_URL } from '../utils/api';
 
 export default function Checkout() {
   const { user } = useAuth();
   const navigate = useNavigate();
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
   const [bookingData, setBookingData] = useState(null);
   const [formData, setFormData] = useState({
     fullName: user?.name || '',

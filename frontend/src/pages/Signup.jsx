@@ -2,8 +2,12 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Lock, User, Plane } from 'lucide-react';
 import Toast from '../components/Toast';
+import { API_URL } from '../utils/api';
 
 export default function Signup() {
+
+  // API base URL coming from shared config
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -59,7 +63,7 @@ export default function Signup() {
     if (!validateForm()) return;
 
     try {
-      const res = await fetch("http://localhost:8000/api/auth/signup", {
+      const res = await fetch(`${API_URL}/api/auth/signup`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
